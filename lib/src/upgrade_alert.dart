@@ -140,7 +140,7 @@ class UpgradeAlertState extends State<UpgradeAlert> {
       displayed = true;
       final appMessages = widget.upgrader.determineMessages(context);
 
-      Future.delayed(const Duration(milliseconds: 0), () {
+      Future.delayed(const Duration(seconds: 5), () {
         showTheDialog(
           key: widget.dialogKey ?? const Key('upgrader_alert_dialog'),
           context: context,
